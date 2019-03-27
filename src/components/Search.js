@@ -1,0 +1,35 @@
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { searchMovie } from "../store/actions/movieActions";
+
+class Search extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { query: "" };
+  }
+  search = () => {
+    this.props.searchMovie(this.state.query);
+  };
+  render() {
+    return (
+      <div className="search">
+        <input
+          type="text"
+          value={this.state.query}
+          onChange={e => this.setState({ query: e.target.value })}
+        />
+        <button className="search-button" onClick={() => this.search()}>
+          Search
+        </button>
+      </div>
+    );
+  }
+}
+
+const mapStateToProps = null;
+const mapDispatchToProps = { searchMovie };
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Search);
