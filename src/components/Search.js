@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { searchMovie } from "../store/actions/movieActions";
+import "../styles/search.scss";
 
 class Search extends Component {
   constructor(props) {
