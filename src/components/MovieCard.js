@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import "../styles/movieCard.scss";
 
 const MovieCard = props => {
   const { movie, type } = props;
