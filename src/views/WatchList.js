@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchWatchlist } from "../store/actions/movieActions";
 import MovieCard from "../components/MovieCard";
+import "../styles/movieList.scss";
 
 class WatchList extends Component {
   componentDidMount() {
