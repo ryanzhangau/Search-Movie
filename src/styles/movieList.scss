@@ -1,0 +1,19 @@
+.movie-list {
+  padding: 15px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, calc(100% - 10px));
+  justify-content: center;
+  @media screen and (min-width: 641px) {
+    grid-template-columns: repeat(auto-fill, calc(50% - 10px));
+  }
+  @media screen and (min-width: 979px) {
+    grid-template-columns: repeat(auto-fill, calc(33.33% - 10px));
+  }
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(auto-fill, calc(25% - 10px));
+  }
+  @media screen and (min-width: 2000px) {
+    grid-template-columns: repeat(auto-fill, calc(20% - 10px));
+  }
+}
