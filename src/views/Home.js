@@ -3,6 +3,7 @@ import Search from "../components/Search";
 import { searchMovie } from "../store/actions/movieActions";
 import { connect } from "react-redux";
 import MovieCard from "../components/MovieCard";
+import "../styles/movieList.scss";
 
 class Home extends Component {
   render() {
