@@ -14,10 +14,12 @@ class Search extends Component {
   render() {
     return (
       <div className="search">
+        <h3>Search Moive By Name</h3>
         <input
           type="text"
           value={this.state.query}
           onChange={e => this.setState({ query: e.target.value })}
+          placeholder="Search Movie ..."
         />
         <button className="search-button" onClick={() => this.search()}>
           Search
